@@ -59,18 +59,7 @@ function updateTimeLine() {
   
   // Update line position
   const timeLine = document.getElementById('time-line');
-  const currentTimeDisplay = document.getElementById('current-time');
-  
   timeLine.style.top = `${percentage}%`;
-  currentTimeDisplay.style.top = `${percentage}%`;
-  
-  // Format current time for display
-  const displayHour = hours === 0 ? 12 : (hours > 12 ? hours - 12 : hours);
-  const period = hours < 12 ? 'am' : 'pm';
-  const displayMinutes = minutes.toString().padStart(2, '0');
-  const displaySeconds = seconds.toString().padStart(2, '0');
-  
-  currentTimeDisplay.textContent = `${displayHour}:${displayMinutes}:${displaySeconds}${period}`;
 }
 
 // Initialize
