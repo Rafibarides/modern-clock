@@ -4,6 +4,7 @@ function createCheckpoints() {
   const boldTimes = ['8:00am', '1:30pm', '5:00pm', '8:00pm'];
   
   // Create checkpoints for every hour, plus 1:30pm
+  //made by Rafi
   const checkpointTimes = [];
   
   for (let i = 0; i < 24; i++) {
